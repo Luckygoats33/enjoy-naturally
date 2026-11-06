@@ -3,7 +3,7 @@
   font-style: normal;
   font-weight: 400 700;
   font-display: swap;
-  src: url("/enjoy-naturally/assets/fonts/fraunces-latin.woff2") format("woff2");
+  src: url("../fonts/fraunces-latin.woff2") format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
@@ -12,7 +12,7 @@
   font-style: normal;
   font-weight: 400 700;
   font-display: swap;
-  src: url("/enjoy-naturally/assets/fonts/source-sans-3-latin.woff2") format("woff2");
+  src: url("../fonts/source-sans-3-latin.woff2") format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
@@ -21,7 +21,7 @@
   font-style: italic;
   font-weight: 400 700;
   font-display: swap;
-  src: url("/enjoy-naturally/assets/fonts/source-sans-3-italic-latin.woff2") format("woff2");
+  src: url("../fonts/source-sans-3-italic-latin.woff2") format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
@@ -162,8 +162,12 @@ a:hover {
 }
 
 .category-hub {
-  max-width: 46rem;
+  max-width: none;
   margin: 0 0 2.2rem;
+}
+
+.category-hub > :not(.hub-spread) {
+  max-width: 46rem;
 }
 
 .this-week {
@@ -192,10 +196,18 @@ a:hover {
   background: var(--paper);
   border: 1px solid var(--line);
   border-radius: 16px;
-  padding: 1rem 1.1rem 1.1rem;
+  padding: 0.7rem 0.7rem 1.1rem;
   text-decoration: none;
   color: inherit;
   min-height: 100%;
+}
+
+.week-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 0.35rem;
 }
 
 .week-card strong {
@@ -389,9 +401,9 @@ a:hover {
 .hero {
   max-width: var(--max);
   margin: 0 auto;
-  padding: 1.75rem 1.25rem 2.5rem;
+  padding: 2.4rem 1.25rem 3.2rem;
   display: grid;
-  gap: 1.5rem;
+  gap: 1.75rem;
   align-items: center;
 }
 
@@ -480,9 +492,9 @@ button.button {
 .band {
   max-width: var(--max);
   margin: 0 auto;
-  padding: 0.5rem 1.25rem 2.4rem;
+  padding: 1.4rem 1.25rem 3.4rem;
   display: grid;
-  gap: 1.2rem;
+  gap: 1.35rem;
   grid-template-areas:
     "intro"
     "cards"
@@ -923,7 +935,7 @@ select[aria-invalid="true"] {
 }
 
 .crumbs li:not(:last-child)::after {
-  content: "/enjoy-naturally/";
+  content: "/";
   margin-left: 0.4rem;
   color: var(--terracotta);
 }
@@ -996,6 +1008,74 @@ select[aria-invalid="true"] {
   font-family: var(--sans);
   color: var(--muted);
   font-size: 1.15rem;
+}
+
+.hub-spread {
+  display: grid;
+  gap: 1.25rem;
+  margin: 0 0 2.6rem;
+  max-width: none;
+}
+
+.hub-photo {
+  margin: 0;
+  border-radius: 16px;
+  overflow: hidden;
+  background: var(--cream-deep);
+  aspect-ratio: 16 / 10;
+}
+
+.hub-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.category-hub .hub-spread .card h3,
+.category-hub .card h3 {
+  margin: 0;
+  font-size: 1.08rem;
+  font-weight: 520;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+}
+
+.category-hub .card p,
+.category-hub .hub-spread p {
+  margin: 0.35rem 0 0;
+  font-family: var(--sans);
+}
+
+.category-hub .cards {
+  margin: 0;
+}
+
+@media (min-width: 800px) {
+  .hub-spread {
+    grid-template-columns: 0.9fr 1.15fr;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .hub-photo {
+    aspect-ratio: 4 / 3;
+  }
+
+  .hub-spread-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 760px) {
+  .hub-spread .cards.cards-one {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 980px) {
+  .hub-spread .cards.cards-four {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .sources,
