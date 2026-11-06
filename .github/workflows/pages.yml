@@ -17,40 +17,38 @@ concurrency:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Checkout preview
-        uses: actions/checkout@v4
-
-      - name: Enable Pages from the gh-pages branch
-        continue-on-error: true
+      - name: Check whether Pages is enabled
+        id: check
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          set +e
-          gh api --method POST "repos/${GITHUB_REPOSITORY}/pages" \
-            -f build_type=legacy \
-            -f source[branch]=gh-pages \
-            -f source[path]=/ 
-          post_status=$?
-          if [ "$post_status" -ne 0 ]; then
-            gh api --method PUT "repos/${GITHUB_REPOSITORY}/pages" \
-              -f build_type=legacy \
-              -f source[branch]=gh-pages \
-              -f source[path]=/
+          code=$(curl -sS -o /tmp/pages.json -w "%{http_code}" \
+            -H "Authorization: Bearer ${GH_TOKEN}" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/${GITHUB_REPOSITORY}/pages")
+          build_type=$(python3 -c 'import json; print(json.load(open("/tmp/pages.json")).get("build_type") or "")' 2>/dev/null || true)
+          echo "http=${code}" >> "$GITHUB_OUTPUT"
+          echo "build_type=${build_type}" >> "$GITHUB_OUTPUT"
+          if [ "$code" != "200" ]; then
+            echo "::notice::GitHub Pages is not turned on yet. A repo admin needs Settings → Pages → Deploy from a branch → gh-pages → / (root) → Save. The preview will be https://luckygoats33.github.io/enjoy-naturally/"
           fi
 
+      - name: Checkout preview
+        if: steps.check.outputs.http == '200' && steps.check.outputs.build_type == 'workflow'
+        uses: actions/checkout@v4
+
       - name: Configure Pages
-        id: pages
+        if: steps.check.outputs.http == '200' && steps.check.outputs.build_type == 'workflow'
         uses: actions/configure-pages@v5
 
       - name: Upload site
+        if: steps.check.outputs.http == '200' && steps.check.outputs.build_type == 'workflow'
         uses: actions/upload-pages-artifact@v3
         with:
           path: .
 
       - name: Deploy
+        if: steps.check.outputs.http == '200' && steps.check.outputs.build_type == 'workflow'
         id: deployment
         uses: actions/deploy-pages@v4
