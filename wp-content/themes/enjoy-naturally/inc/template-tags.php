@@ -465,19 +465,6 @@ function en_search_index_items() {
 		);
 	}
 
-	foreach (en_catalog() as $slug => $item) {
-		if ('preview' !== $item['kind'] || en_post_by_slug($slug)) {
-			continue;
-		}
-		$items[] = array(
-			'title'     => $item['title'],
-			'href'      => en_category_url($item['category']) . '#' . $slug,
-			'text'      => $item['excerpt'],
-			'kind'      => 'preview',
-			'kindLabel' => __('On the calendar', 'enjoy-naturally'),
-		);
-	}
-
 	return $items;
 }
 

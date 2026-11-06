@@ -16,9 +16,9 @@ add_action('customize_register', 'en_customize_register');
  */
 function en_mod_defaults() {
 	return array(
-		'en_hero_title'     => __('What I\'m loving this November', 'enjoy-naturally'),
-		'en_hero_lede'      => __('Recipes I cook on weeknights, yoga that fits in a small room, and the everyday ideas I don\'t want to lose.', 'enjoy-naturally'),
-		'en_hero_cta_label' => __('Explore fall ideas', 'enjoy-naturally'),
+		'en_hero_title'     => __('This week at home', 'enjoy-naturally'),
+		'en_hero_lede'      => __('Soup for tonight, an 8-minute yoga flow, and one room reset.', 'enjoy-naturally'),
+		'en_hero_cta_label' => __('See this week', 'enjoy-naturally'),
 		'en_hero_cta_url'   => '',
 	);
 }
@@ -49,7 +49,7 @@ function en_hero_cta_url() {
 	if ('' !== $url) {
 		return $url;
 	}
-	return en_category_url('seasonal');
+	return home_url('/#this-week');
 }
 
 /**

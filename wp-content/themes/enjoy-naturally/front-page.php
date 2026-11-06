@@ -21,6 +21,26 @@ $hero = en_hero_image();
 			<img src="<?php echo esc_url($hero['url']); ?>" alt="<?php echo esc_attr($hero['alt']); ?>" width="<?php echo esc_attr((string) $hero['width']); ?>" height="<?php echo esc_attr((string) $hero['height']); ?>" fetchpriority="high" decoding="async">
 		</figure>
 	</section>
+	<section class="this-week" id="this-week" aria-labelledby="this-week-title">
+		<h2 id="this-week-title"><?php esc_html_e('This week', 'enjoy-naturally'); ?></h2>
+		<div class="this-week-grid">
+			<a class="week-card" href="<?php echo esc_url(home_url('/creamy-wild-rice-mushroom-soup/')); ?>">
+				<p class="eyebrow"><?php esc_html_e('Recipe', 'enjoy-naturally'); ?></p>
+				<strong><?php esc_html_e('Wild rice and mushroom soup', 'enjoy-naturally'); ?></strong>
+				<span><?php esc_html_e('Cook tonight', 'enjoy-naturally'); ?> <?php echo en_icon('arrow'); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></span>
+			</a>
+			<a class="week-card" href="<?php echo esc_url(home_url('/mindful-living/#cooler-room-flow')); ?>">
+				<p class="eyebrow"><?php esc_html_e('Yoga', 'enjoy-naturally'); ?></p>
+				<strong><?php esc_html_e('Cooler Room Flow, 8 minutes', 'enjoy-naturally'); ?></strong>
+				<span><?php esc_html_e('Practice now', 'enjoy-naturally'); ?> <?php echo en_icon('arrow'); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></span>
+			</a>
+			<a class="week-card" href="<?php echo esc_url(home_url('/natural-home/#evening-reset')); ?>">
+				<p class="eyebrow"><?php esc_html_e('Home', 'enjoy-naturally'); ?></p>
+				<strong><?php esc_html_e('Evening reset, five steps', 'enjoy-naturally'); ?></strong>
+				<span><?php esc_html_e('Do this week', 'enjoy-naturally'); ?> <?php echo en_icon('arrow'); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></span>
+			</a>
+		</div>
+	</section>
 	<?php foreach (en_home_bands() as $band) : ?>
 		<?php en_render_band($band); ?>
 	<?php endforeach; ?>

@@ -153,7 +153,7 @@ function en_newsletter_fields() {
 		<input name="consent" type="checkbox" value="1" required>
 		<span><?php esc_html_e('Send the note when there is one. Your address stays with me until a mailing list is connected. It is not sold.', 'enjoy-naturally'); ?></span>
 	</label>
-	<p id="newsletter-hint" class="form-note"><?php echo wp_kses_post(sprintf(__('No confirmation email yet. <a href="%s">How the list will work</a>.', 'enjoy-naturally'), esc_url(en_page_url('newsletter')))); ?></p>
+	<p id="newsletter-hint" class="form-note"><?php echo wp_kses_post(sprintf(__('Saving this does not subscribe you. <a href="%s">Read the letter page</a>.', 'enjoy-naturally'), esc_url(en_page_url('newsletter')))); ?></p>
 	<?php
 }
 
@@ -364,14 +364,14 @@ function en_form_success($kind, $honeypot) {
 			'ok'      => true,
 			'form'    => $kind,
 			'heading' => __('Saved.', 'enjoy-naturally'),
-			'message' => __('I can read it in the site inbox.', 'enjoy-naturally'),
+			'message' => __('Saved on this site. I did not email you. If site mail is working, I also get a copy.', 'enjoy-naturally'),
 		);
 	}
 	return array(
 		'ok'      => true,
 		'form'    => $kind,
 		'heading' => __('Saved.', 'enjoy-naturally'),
-		'message' => __('I will use this address only for the letter. Nothing was sent to your inbox today.', 'enjoy-naturally'),
+		'message' => __('Saved on this site only. You are not subscribed yet, and nothing was sent to your inbox.', 'enjoy-naturally'),
 	);
 }
 

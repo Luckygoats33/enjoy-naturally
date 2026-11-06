@@ -30,8 +30,12 @@ function en_render_band($band) {
 
 	ob_start();
 	echo '<div class="' . esc_attr($band['cards_class']) . '">';
-	foreach ($band['cards'] as $slug) {
-		en_render_card_slug($slug);
+	foreach ($band['cards'] as $card) {
+		if (is_array($card)) {
+			en_render_link_card($card);
+		} else {
+			en_render_card_slug($card);
+		}
 	}
 	echo '</div>';
 	$cards = ob_get_clean();
@@ -50,6 +54,26 @@ function en_render_band($band) {
  *
  * @param string $slug Catalog slug.
  */
+/**
+ * Photo card with a finished-page call to action.
+ *
+ * @param array<string, mixed> $card Card fields.
+ */
+function en_render_link_card($card) {
+	$url = isset($card['url']) ? (string) $card['url'] : '';
+	if (0 !== strpos($url, 'http')) {
+		$url = home_url($url);
+	}
+	en_render_card(
+		array(
+			'url'   => $url,
+			'title' => isset($card['title']) ? (string) $card['title'] : '',
+			'meta'  => isset($card['cta']) ? (string) $card['cta'] : '',
+			'media' => en_img($card['image'], $card['alt'], $card['width'], $card['height']),
+		)
+	);
+}
+
 function en_render_card_slug($slug) {
 	$post = en_post_by_slug($slug);
 	if ($post instanceof WP_Post) {
@@ -61,7 +85,7 @@ function en_render_card_slug($slug) {
 		return;
 	}
 	$url  = en_category_url($item['category']) . '#' . rawurlencode($slug);
-	$meta = $item['kicker'] . ' · ' . __('Preview', 'enjoy-naturally');
+	$meta = $item['kicker'];
 	en_render_card(
 		array(
 			'url'   => $url,

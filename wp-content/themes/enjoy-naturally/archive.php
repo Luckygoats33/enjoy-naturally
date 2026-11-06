@@ -27,9 +27,7 @@ $category = is_category() ? get_queried_object() : null;
 		?>
 		<p class="eyebrow"><?php echo esc_html($category instanceof WP_Term ? __('Category', 'enjoy-naturally') : __('Journal', 'enjoy-naturally')); ?></p>
 		<h1><?php echo esc_html(wp_strip_all_tags(get_the_archive_title())); ?></h1>
-		<?php if ($category instanceof WP_Term && '' !== trim($category->description)) : ?>
-			<p class="lede"><?php echo wp_kses(en_expand_root_urls($category->description), array( 'a' => array( 'href' => array() ) )); ?></p>
-		<?php elseif (! $category) : ?>
+		<?php if (! $category) : ?>
 			<?php the_archive_description('<p class="lede">', '</p>'); ?>
 		<?php endif; ?>
 	</header>
@@ -38,11 +36,13 @@ $category = is_category() ? get_queried_object() : null;
 			<?php $hub = en_category_hub($category->slug); ?>
 			<?php if ('' !== $hub) : ?>
 				<div class="prose category-hub"><?php echo wp_kses_post($hub); ?></div>
+			<?php elseif ('' !== trim((string) $category->description)) : ?>
+				<p class="lede"><?php echo wp_kses_post(en_expand_root_urls($category->description)); ?></p>
 			<?php endif; ?>
 		<?php endif; ?>
-		<section aria-labelledby="published-title">
-			<h2 id="published-title"><?php esc_html_e('Ready to read', 'enjoy-naturally'); ?></h2>
-			<?php if (have_posts()) : ?>
+		<?php if (have_posts()) : ?>
+			<section aria-labelledby="published-title">
+				<h2 id="published-title"><?php esc_html_e('More posts', 'enjoy-naturally'); ?></h2>
 				<div class="story-list">
 					<?php
 					while (have_posts()) :
@@ -60,14 +60,7 @@ $category = is_category() ? get_queried_object() : null;
 					)
 				);
 				?>
-			<?php elseif ($category instanceof WP_Term) : ?>
-				<p class="empty"><?php esc_html_e('I\'m still writing the first full stories here. The notes below are what I plan to post.', 'enjoy-naturally'); ?></p>
-			<?php else : ?>
-				<p class="empty"><?php esc_html_e('Nothing is filed here yet.', 'enjoy-naturally'); ?></p>
-			<?php endif; ?>
-		</section>
-		<?php if ($category instanceof WP_Term) : ?>
-			<?php en_render_calendar($category->slug); ?>
+			</section>
 		<?php endif; ?>
 	</div>
 </main>
