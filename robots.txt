@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /
+
+# Indexing is off until launch. See README.
+# Sitemap: https://enjoynaturally.com/sitemap.xml

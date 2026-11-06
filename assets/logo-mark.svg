@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 112" fill="none" role="img" aria-labelledby="markTitle">
+  <title id="markTitle">Enjoy Naturally</title>
+  <g stroke="#C56B4A" stroke-width="2.4" stroke-linecap="round">
+    <path d="M36 62c10-18 34-24 52-8"/>
+    <path d="M58 28v11"/>
+    <path d="M42 34l7 8"/>
+    <path d="M74 31l-6 9"/>
+    <path d="M30 48l10 6"/>
+    <path d="M90 46l-10 5"/>
+    <path d="M48 22l5 9"/>
+    <path d="M70 20l-3 10"/>
+  </g>
+  <g stroke="#1C4033" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M62 100c-3-24-18-40-24-58 14 8 22 26 24 58z"/>
+    <path d="M64 100c5-22 22-38 38-52-16 10-28 28-34 52z"/>
+    <path d="M63 98V52"/>
+    <path d="M63 78c6-2 10-8 12-16" opacity="0.9"/>
+  </g>
+</svg>
