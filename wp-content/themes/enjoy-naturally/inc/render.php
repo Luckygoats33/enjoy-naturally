@@ -18,7 +18,15 @@ function en_render_band($band) {
 	$figure   = '<figure class="band-photo">' . $photo . '</figure>';
 	$intro    = '<div class="band-intro"><p class="eyebrow">' . en_icon('leaf') . esc_html($band['eyebrow']) . '</p>';
 	$intro   .= '<h2 id="' . esc_attr($title_id) . '">' . esc_html($band['title']) . '</h2>';
-	$intro   .= '<p class="dek">' . esc_html($band['dek']) . '</p></div>';
+	$intro   .= '<p class="dek">' . esc_html($band['dek']) . '</p>';
+	if (! empty($band['ideas']) && is_array($band['ideas'])) {
+		$intro .= '<ul class="fall-list">';
+		foreach ($band['ideas'] as $idea) {
+			$intro .= '<li>' . esc_html($idea) . '</li>';
+		}
+		$intro .= '</ul>';
+	}
+	$intro .= '</div>';
 
 	ob_start();
 	echo '<div class="' . esc_attr($band['cards_class']) . '">';

@@ -34,6 +34,12 @@ $category = is_category() ? get_queried_object() : null;
 		<?php endif; ?>
 	</header>
 	<div class="page-wrap wide tight">
+		<?php if ($category instanceof WP_Term) : ?>
+			<?php $hub = en_category_hub($category->slug); ?>
+			<?php if ('' !== $hub) : ?>
+				<div class="prose category-hub"><?php echo wp_kses_post($hub); ?></div>
+			<?php endif; ?>
+		<?php endif; ?>
 		<section aria-labelledby="published-title">
 			<h2 id="published-title"><?php esc_html_e('Ready to read', 'enjoy-naturally'); ?></h2>
 			<?php if (have_posts()) : ?>

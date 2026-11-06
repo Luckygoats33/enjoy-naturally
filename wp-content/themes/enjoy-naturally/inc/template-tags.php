@@ -80,11 +80,53 @@ function en_post_by_slug($slug) {
 }
 
 /**
- * Category URL at the site root, with a fallback before the term exists.
+ * Longer essay for a category archive, shipped with the theme.
  *
  * @param string $slug Category slug.
  * @return string
  */
+/**
+ * Extra sections for a page or post, skipped when starter content already includes them.
+ *
+ * @param string $slug Post slug.
+ * @return string
+ */
+function en_supplemental_copy($slug) {
+	$post = get_post();
+	if ($post instanceof WP_Post && false !== strpos($post->post_content, 'en-extra')) {
+		return '';
+	}
+	$slug = sanitize_title($slug);
+	if (! preg_match('/^[a-z0-9-]+$/', $slug)) {
+		return '';
+	}
+	$path = get_template_directory() . '/demo/extras/' . $slug . '.html';
+	if (! is_readable($path)) {
+		return '';
+	}
+	$html = file_get_contents($path);
+	if (! is_string($html) || '' === trim($html)) {
+		return '';
+	}
+	return wp_kses_post(en_expand_root_urls($html));
+}
+
+function en_category_hub($slug) {
+	$slug = sanitize_title($slug);
+	if (! preg_match('/^[a-z0-9-]+$/', $slug)) {
+		return '';
+	}
+	$path = get_template_directory() . '/demo/hubs/' . $slug . '.html';
+	if (! is_readable($path)) {
+		return '';
+	}
+	$html = file_get_contents($path);
+	if (! is_string($html) || '' === trim($html)) {
+		return '';
+	}
+	return en_expand_root_urls($html);
+}
+
 function en_category_url($slug) {
 	$term = get_term_by('slug', $slug, 'category');
 	if ($term instanceof WP_Term) {

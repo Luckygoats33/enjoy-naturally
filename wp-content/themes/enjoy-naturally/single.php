@@ -73,7 +73,13 @@ get_header();
 				<div class="prose"><?php echo get_the_password_form(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></div>
 			<?php else : ?>
 				<div class="prose<?php echo esc_attr($recipe); ?>">
-					<?php the_content(); ?>
+					<?php
+					the_content();
+					$extra = en_supplemental_copy((string) get_post_field('post_name'));
+					if ('' !== $extra) {
+						echo $extra; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- kses'd in the helper.
+					}
+					?>
 				</div>
 				<?php
 				$related = en_related_posts(get_the_ID(), 2);

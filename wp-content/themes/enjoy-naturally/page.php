@@ -37,6 +37,10 @@ get_header();
 				echo get_the_password_form(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 			} else {
 				the_content();
+				$extra = en_supplemental_copy((string) get_post_field('post_name'));
+				if ('' !== $extra) {
+					echo $extra; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- kses'd in the helper.
+				}
 			}
 			?>
 		</div>
