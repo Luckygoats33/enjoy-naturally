@@ -1,0 +1,23 @@
+Enjoy Naturally WordPress Theme
+Copyright (C) 2026 Enjoy Naturally
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program. If not, see https://www.gnu.org/licenses/gpl-2.0.html.
+
+Fonts
+-----
+Fraunces and Source Sans 3 are licensed under the SIL Open Font License 1.1.
+License texts ship in assets/fonts/Fraunces-OFL.txt and assets/fonts/SourceSans3-OFL.txt.
+
+Photographs in assets/images/ were created for Enjoy Naturally and are included
+so the starter journal can be imported with its pictures.

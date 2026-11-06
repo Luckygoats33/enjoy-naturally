@@ -1,0 +1,17 @@
+/*
+Theme Name: Enjoy Naturally
+Theme URI: https://enjoynaturally.com
+Author: Enjoy Naturally
+Author URI: https://enjoynaturally.com
+Description: Seasonal journal for Enjoy Naturally, a Nature's Turn publication. Layout 3 pairs a wordmark header, a monthly hero, alternating story bands, category archives, article pages, and a newsletter panel.
+Version: 1.0.0
+Requires at least: 6.0
+Tested up to: 6.7
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: enjoy-naturally
+Tags: blog, food-and-drink, custom-logo, custom-menu, featured-images, one-column, custom-colors, translation-ready
+*/
+
+/* The design system lives in assets/css/styles.css and is enqueued from functions.php. */

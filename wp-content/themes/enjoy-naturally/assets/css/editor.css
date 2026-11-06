@@ -1,0 +1,24 @@
+body {
+  background: #f6f2ea;
+  color: #1c4033;
+  font-family: "Source Sans 3", "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+.editor-styles-wrapper {
+  font-family: Fraunces, Georgia, serif;
+  font-size: 1.14rem;
+  line-height: 1.7;
+  color: #1c4033;
+}
+
+.editor-styles-wrapper h1,
+.editor-styles-wrapper h2,
+.editor-styles-wrapper h3 {
+  font-family: Fraunces, Georgia, serif;
+  letter-spacing: -0.03em;
+  font-weight: 520;
+}
+
+.editor-styles-wrapper a {
+  color: #132c23;
+}

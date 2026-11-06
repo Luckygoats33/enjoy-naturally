@@ -1,0 +1,251 @@
+{
+  "version": 1,
+  "site": {
+    "title": "Enjoy Naturally",
+    "tagline": "Seasonal food, gardens, and family life."
+  },
+  "categories": [
+    {
+      "name": "Food & Recipes",
+      "slug": "food-recipes",
+      "nav_label": "Kitchen",
+      "in_nav": true,
+      "description": "This is the kitchen desk of Enjoy Naturally: how food is made, how labels work, and a few pots worth cooking. Stories here stay practical. They do not offer medical advice or product cures."
+    },
+    {
+      "name": "Garden",
+      "slug": "garden",
+      "nav_label": "Garden",
+      "in_nav": true,
+      "description": "Beds, pots, windowsills, and the leaves already on the ground. Gardening notes here are for home growers, written as chores and pleasures, not as a yield contest."
+    },
+    {
+      "name": "Natural Home",
+      "slug": "natural-home",
+      "nav_label": "Home & Living",
+      "in_nav": true,
+      "description": "Cloth, wood, light, and the odd homemade cleaner once we have tested the method and said what it can and cannot do. Home stories are about comfort and care of a place."
+    },
+    {
+      "name": "Family & Kids",
+      "slug": "family-kids",
+      "nav_label": "Family",
+      "in_nav": true,
+      "description": "Family stories assume busy people and children who change their minds. Safety notes point to public guidance. Nothing here is personal medical, developmental, or therapeutic advice."
+    },
+    {
+      "name": "Seasonal",
+      "slug": "seasonal",
+      "nav_label": "Seasonal",
+      "in_nav": true,
+      "description": "The journal leads with the month you are actually in. November is soups, leaves, and a slower dinner. This page gathers what is ready to read and what is still on the calendar."
+    },
+    {
+      "name": "Herbs & Natural Wellness",
+      "slug": "herbs",
+      "nav_label": "Herbs & Natural Wellness",
+      "in_nav": false,
+      "description": "Herbs show up here as food: mint in a glass, thyme on mushrooms, chamomile as a cup you like the taste of. Traditional uses can be part of the story. They are not instructions to treat, cure, or prevent anything. Talk with a clinician before using herbs in place of care you already need. Read the <a href=\"/medical-disclaimer/\">medical disclaimer</a>."
+    },
+    {
+      "name": "Outdoors",
+      "slug": "outdoors",
+      "nav_label": "Outdoors",
+      "in_nav": false,
+      "description": "Bird feeders, scavenger hunts, and the block around the corner. Outdoor notes stay welcoming to beginners and honest about cold fingers."
+    },
+    {
+      "name": "Mindful Living",
+      "slug": "mindful-living",
+      "nav_label": "Mindful Living",
+      "in_nav": false,
+      "description": "Short routines for ordinary days: a walk, an earlier evening, a few minutes of sitting still. These are lifestyle notes. They are not treatment for insomnia, anxiety, or any other condition."
+    },
+    {
+      "name": "Sustainable Living",
+      "slug": "sustainable-living",
+      "nav_label": "Sustainable Living",
+      "in_nav": false,
+      "description": "Smaller trash, longer use, and fewer things bought twice. Sustainability stories here favor habits you can keep, and they skip the guilt lecture."
+    }
+  ],
+  "pages": [
+    {
+      "title": "A journal from Nature's Turn",
+      "slug": "about",
+      "kicker": "About",
+      "menu_label": "About",
+      "excerpt": "Enjoy Naturally is a Nature's Turn publication about seasonal living, real food, and home.",
+      "description": "Enjoy Naturally is a Nature's Turn publication about seasonal living, real food, and home.",
+      "content": "<!-- wp:html -->\n[enjoy_lockup]\n<p class=\"dek\">Enjoy Naturally is a journal about seasonal food, home, garden, and family life. The work is practical on purpose: what to cook, what to notice outside, and how to read a label without handing the decision to a slogan.</p>\n<div class=\"notice\">\n  <p><strong>A Nature's Turn publication.</strong></p>\n  <p>Enjoy Naturally is published by Nature's Turn. Nature's Turn makes freeze-dried fruit and other simple foods. This journal is the editorial side of that work. We will not pretend the publication and the company are strangers.</p>\n  <p>Nature's Turn is led by Will Wiedenmann. When a story mentions a Nature's Turn product, or when the business relationship matters to the piece, we say so in the story itself. A product mention is never a promise about health, and it is never a review unless we label it as one.</p>\n</div>\n<h2>What we cover</h2>\n<p>Food and recipes, the garden, herbs as cooking and tradition, the natural home, family life, mindful everyday habits, the season, time outdoors, and living with less waste. Freeze-dried fruit is one thread. It is not the whole cloth.</p>\n<h2>What we will not claim</h2>\n<p>We do not say a food treats, cures, prevents, or manages a condition. We do not say it boosts immunity, detoxes the body, or stands in for sleep, medicine, or a clinician. Herbs, when we write about them, are framed as flavor and tradition. Questions about health belong with a qualified professional. The <a href=\"/medical-disclaimer/\">medical disclaimer</a> is the longer version of this paragraph.</p>\n<h2>How a story gets here</h2>\n<p>Stories are edited before they are published. Facts that can be checked are tied to a public source, usually a government page or a university extension. If we get something wrong, write through the <a href=\"/contact/\">contact page</a> and we will correct the record. Ownership, affiliates, and corrections are spelled out in the <a href=\"/editorial-disclosure/\">editorial disclosure</a>.</p>\n<h2>Photographs</h2>\n<p>Photographs in this first version were created for Enjoy Naturally. They are not pictures of our readers, our staff, or a specific family's kitchen. Later stories may use photographs from cooks, gardeners, and makers, and those will be credited in the caption.</p>\n<h2>Say hello</h2>\n<p>Story ideas, corrections, and partnership notes go through the <a href=\"/contact/\">contact form</a>. The seasonal letter, when the list is connected, will live on the <a href=\"/newsletter/\">newsletter page</a>.</p>\n<!-- /wp:html -->"
+    },
+    {
+      "title": "Contact the editors",
+      "slug": "contact",
+      "kicker": "Contact",
+      "menu_label": "Contact",
+      "excerpt": "Write the Enjoy Naturally editors.",
+      "description": "Write the Enjoy Naturally editors about corrections, story ideas, and partnerships.",
+      "content": "<!-- wp:html -->\n<p class=\"dek\">Corrections, story ideas, and notes for the editors.</p>\n[enjoy_contact_form]\n<!-- /wp:html -->"
+    },
+    {
+      "title": "The seasonal letter",
+      "slug": "newsletter",
+      "kicker": "Newsletter",
+      "menu_label": "Newsletter",
+      "excerpt": "A short seasonal letter: what is in season, one recipe, and one small project.",
+      "description": "Join the Enjoy Naturally seasonal letter. The form saves an address for the editors until the mailing list is connected.",
+      "content": "<!-- wp:html -->\n<p class=\"dek\">A short letter, when we send one: what is in season, one recipe, and one small project for the house or the garden. No daily drip, and no challenge calendar.</p>\n<h2>What you are signing up for, later</h2>\n<p>The public list will be a confirmed subscription. You will get an email asking you to opt in, and you will be able to leave with one click. We expect to use Klaviyo or a similar service. We will not sell the list.</p>\n<div class=\"notice\">\n  <p><strong>The mailing service is not connected yet.</strong></p>\n  <p>The form below saves your address for the editors. It does not send a confirmation email, and it does not add you to Klaviyo. When that service is connected, this page will ask you to confirm before a letter is sent. Use an address you are willing to share with Enjoy Naturally.</p>\n</div>\n[enjoy_newsletter_form]\n<p>The same box sits on the homepage beside the recipe of the week. The <a href=\"/privacy/\">privacy page</a> explains what the site keeps.</p>\n<!-- /wp:html -->"
+    },
+    {
+      "title": "Privacy",
+      "slug": "privacy",
+      "kicker": "Privacy",
+      "menu_label": "Privacy",
+      "excerpt": "How Enjoy Naturally handles forms, cookies, and a future mailing list.",
+      "description": "How Enjoy Naturally handles forms, cookies, and a future mailing list.",
+      "content": "<!-- wp:html -->\n<p class=\"dek\">This page describes how Enjoy Naturally handles the journal on its WordPress host. It will be updated again when a mailing service and analytics are connected.</p>\n<h2>Who publishes this site</h2>\n<p>Enjoy Naturally is published by Nature's Turn. The journal runs on WordPress. It does not offer public user accounts for readers.</p>\n<h2>Forms</h2>\n<p>The newsletter form stores the email address you submit, with the consent box you checked, so the editors can move it to the mailing list later. The contact form stores your name, email, topic, and message, and attempts to email the site administrator. Those entries are kept in the WordPress dashboard for editors. They are not sold. Do not use the contact form for sensitive personal information, medical details, or passwords.</p>\n<p>Until a mailing service is connected, joining the list does not send you a confirmation email and does not start a newsletter.</p>\n<h2>Cookies and analytics</h2>\n<p>WordPress and the host may set cookies that are necessary to run the site, including a cookie if an editor logs in. This theme does not set advertising cookies and does not load Google Analytics or a similar tracker. If analytics are added later, this page will name the tool, say what it collects, and link to a way to opt out before that happens.</p>\n<h2>The future mailing list</h2>\n<p>The plan is to use a mailing service, expected to be Klaviyo, with a confirmation email before someone is subscribed. Until that service is connected, the signup box saves an address for the editors only. It will not put you on an outside list.</p>\n<h2>Links</h2>\n<p>Stories link to public sources such as FDA, USDA, CDC, and university extensions. Those sites have their own privacy practices. A link is not an endorsement of every page on that domain.</p>\n<h2>Children</h2>\n<p>The journal writes about family life for adult readers. We do not knowingly collect personal information from children. The forms on this site should be used by adults.</p>\n<h2>Contact</h2>\n<p>Privacy questions can go through the <a href=\"/contact/\">contact page</a>. Editors read those notes from the journal inbox.</p>\n<!-- /wp:html -->",
+      "is_privacy_policy": true
+    },
+    {
+      "title": "Editorial disclosure",
+      "slug": "editorial-disclosure",
+      "kicker": "Disclosure",
+      "menu_label": "Editorial disclosure",
+      "excerpt": "Who publishes Enjoy Naturally, how stories are sourced, and how corrections work.",
+      "description": "Who publishes Enjoy Naturally, how stories are sourced, and how corrections work.",
+      "content": "<!-- wp:html -->\n<p class=\"dek\">Readers should be able to tell who publishes Enjoy Naturally, how a story is sourced, and when a business interest is in the room.</p>\n<h2>Ownership</h2>\n<p>Enjoy Naturally is published by Nature's Turn. Nature's Turn makes freeze-dried fruit and related foods, and is led by Will Wiedenmann. That relationship is stated in the header, the footer, and on the <a href=\"/about/\">about page</a>. The standing line on our stories is: Enjoy Naturally is published by Nature's Turn.</p>\n<h2>Independence, stated honestly</h2>\n<p>Stories are written for readers first: to explain a process, share a recipe, or make a season easier to live in. Nature's Turn owns the publication, so we do not describe the journal as an outside reviewer of our own company. Product mentions are rare. When they happen, they are labeled in the story and they are not health claims.</p>\n<h2>Sources</h2>\n<p>Factual statements about food processing, labels, nutrition data, and food safety cite a public source. We prefer U.S. government pages, such as FDA, USDA, and CDC, and university extension publications. A source is linked from the story. If a number is uncertain, we leave the number out rather than guess.</p>\n<h2>Health language</h2>\n<p>We do not claim that a food or herb treats, cures, prevents, or manages a disease or condition. We do not claim it boosts immunity or detoxifies the body. The <a href=\"/medical-disclaimer/\">medical disclaimer</a> explains the limit of what a lifestyle journal can say.</p>\n<h2>Affiliates and sponsors</h2>\n<p>This preview has no affiliate links and no sponsored stories. If either appears later, the story or link will say so in plain language before a reader is asked to click.</p>\n<h2>Corrections</h2>\n<p>If we publish an error, we will correct the story and note the change when the error is more than a typo. Send corrections through the <a href=\"/contact/\">contact page</a>.</p>\n<h2>Editing tools</h2>\n<p>Editors may use software to help draft a story. A person reviews every story before it is published. Software does not decide what Enjoy Naturally stands behind.</p>\n<h2>Photographs</h2>\n<p>Images in this first version were created for the journal. They do not document a real reader's home. Captions on article pages say so. Future photographs of people will be used with permission and credit.</p>\n<!-- /wp:html -->"
+    },
+    {
+      "title": "Medical disclaimer",
+      "slug": "medical-disclaimer",
+      "kicker": "Disclaimer",
+      "menu_label": "Medical disclaimer",
+      "excerpt": "Enjoy Naturally publishes lifestyle stories, not medical advice.",
+      "description": "Enjoy Naturally publishes lifestyle stories, not medical advice.",
+      "content": "<!-- wp:html -->\n<p class=\"dek\">Enjoy Naturally is a lifestyle journal. It is not a medical, dietetic, or mental-health service, and it is not a substitute for care from a qualified clinician.</p>\n<h2>Not advice for your body</h2>\n<p>Stories about food, herbs, sleep, movement, and family routines are general information. They are not personalized advice. They are not meant to diagnose, treat, cure, prevent, or manage any disease or condition. Do not change a medication, a prescribed diet, or a care plan because of something you read here. Talk with your physician, pharmacist, or other licensed clinician about your own situation.</p>\n<h2>Food is not medicine on this site</h2>\n<p>We may discuss what a process does to fruit, how a label uses the word “natural,” or how to pack a lunch that stays cold. Those are kitchen and safety topics. They are not claims that a snack will change a lab result, a diagnosis, or a child's development. Nature's Turn foods are foods. Nothing published here says a Nature's Turn product treats autism or any other condition.</p>\n<h2>Herbs and traditions</h2>\n<p>When we write about herbs, we write about taste, growing, and culinary or cultural tradition. Traditional use is not the same thing as evidence that an herb treats an illness. People who are pregnant, nursing, giving herbs to children, or taking medication should ask a clinician before using herbs beyond ordinary amounts in food.</p>\n<h2>Allergies, choking, and food safety</h2>\n<p>Family stories repeat public guidance from agencies such as the CDC and USDA on choking hazards and temperature. That guidance is general. Allergy decisions, swallowing concerns, and what a specific child can eat safely belong with that child's clinician. In an emergency, including a choking episode where someone cannot breathe, call your local emergency number.</p>\n<h2>If you need care</h2>\n<p>If you think you have a medical emergency, contact emergency services. For ongoing symptoms, see a licensed health professional. Enjoy Naturally cannot reply as a clinic, and the contact form is not a way to get medical advice.</p>\n<!-- /wp:html -->"
+    }
+  ],
+  "posts": [
+    {
+      "slug": "what-is-freeze-dried-fruit",
+      "title": "What Is Freeze-Dried Fruit? How It Works and What Changes",
+      "kicker": "Explainer",
+      "category": "food-recipes",
+      "date": "2026-11-05 12:00:00",
+      "minutes": 5,
+      "image": "freeze-dried.jpg",
+      "alt": "A ceramic bowl of crisp freeze-dried strawberry and apple pieces on linen, with two fresh strawberries beside it.",
+      "excerpt": "Freeze-dried fruit is real fruit with most of the water lifted out by freezing and a vacuum. The pieces stay light and crisp. Here is what changes, and what does not.",
+      "description": "Freeze-dried fruit is real fruit with most of the water removed by cold and vacuum. Here is what changes in texture, flavor, and the pantry.",
+      "content": "<!-- wp:html -->\n<p class=\"dek\">Those light, crisp pieces in the bag started as ordinary fruit. Freeze-drying takes most of the water out while the fruit is still frozen. What you taste is concentrated. What you hold barely weighs anything. Here is the plain version of how that happens, and what actually changes.</p>\n\n<h2>The short version</h2>\n<p>Freeze-drying, sometimes called lyophilization, is a way of preserving food by removing water. The fruit is frozen. Then it sits under a vacuum, and the ice turns straight into vapor. That vapor leaves the fruit behind. The pieces often keep a shape close to the fresh slice, but they snap instead of dripping.</p>\n<p>It is still fruit. It is not a fresh peach, and it is not the chewy dried apricot from a warm dehydrator. It is a third thing: dry, porous, and ready when you are.</p>\n\n<h2>How the process works</h2>\n<p>Home machines and commercial dryers differ in size. The idea is the same. Utah State University Extension describes three stages: freezing the food, a primary drying stage where ice becomes vapor, and a secondary drying stage that draws off the last of the moisture.</p>\n<ol>\n  <li><strong>Freezing.</strong> The fruit is washed, trimmed, and usually sliced so the pieces freeze evenly. A thin slice finishes sooner than a fat wedge of watermelon.</li>\n  <li><strong>Primary drying.</strong> The chamber pressure drops. Under that vacuum, ice can sublimate: it goes from solid to vapor without melting into a puddle first. A little warmth can speed this along, while the fruit is meant to stay frozen as the ice leaves. The University of Arizona Cooperative Extension describes the taste of freeze-dried food as very close to the original, which fits a process that skips the higher heat of other drying methods.</li>\n  <li><strong>Secondary drying.</strong> A little water is still bound inside the fruit. A warmer, still-gentle finish removes more of it. The aim is a dry piece that keeps well once it is sealed away from air and humidity.</li>\n</ol>\n<p>Open the bag and the fruit is thirsty again. The same airy structure that let the ice escape will pull moisture from the room. That is why a forgotten open pouch turns soft. Close it well, and keep it cool and dry.</p>\n\n<h2>What changes</h2>\n<h3>Water and weight</h3>\n<p>Most of a fresh strawberry is water. Take the water away and the piece drops in weight, even when the outline still looks familiar. A small pouch can hold what used to be a bowl of fruit. That is handy in a lunch sack. It is also easy to lose track of how much fruit is in a handful.</p>\n<h3>Texture</h3>\n<p>Expect a crisp, airy bite that softens as you chew. Hot-air drying usually leaves fruit leathery. Freeze-dried pieces shatter. Plenty of people, kids included, like that crunch. If you want something spoonable, cover a few pieces with a splash of water or warm tea and wait.</p>\n<h3>Flavor and color</h3>\n<p>With less water in the way, flavor often tastes brighter in each bite. Color often stays nearer to fresh fruit than it does after a long spell in a warm dehydrator, because the process avoids high heat. Light, air, and time can still fade it. A clear jar on a sunny sill is a pretty picture and a poor pantry.</p>\n<h3>Sugar, in a smaller bite</h3>\n<p>Freeze-drying does not, by itself, stir in a spoon of sugar. It does pack the fruit’s own sugars into less space. Five slices of fresh apple and five slices of freeze-dried apple are not the same snack, even when the slice count matches. Read the label. If the ingredient list is only the fruit, the sugar on the nutrition panel is the fruit’s sugar, concentrated. If the list adds sugar, oil, or flavor, you are holding a recipe, not just preserved fruit.</p>\n<h3>Vitamins and minerals</h3>\n<p>When water leaves, whatever remains is packed into a lighter piece, and not every nutrient stays put. Air, warmth, and time all shift vitamin levels. Extension publications often note that the lower heat of freeze-drying is gentler on aroma and color than a hot dehydrator. That is not a promise that a pouch matches fresh fruit vitamin for vitamin. For a specific food, compare the package with an entry in <a href=\"https://fdc.nal.usda.gov/\">USDA FoodData Central</a>. Treat a health line on the front of the bag as advertising, and read the back.</p>\n\n<h2>Freeze-dried is not the same as dehydrated</h2>\n<p>Both methods remove water so fruit keeps longer. They do not make the same food.</p>\n<ul>\n  <li>Dehydrating uses warm moving air. Water evaporates. Pieces shrink and turn supple or leathery. A University of Florida IFAS guide to dried peaches describes heated air doing that work, and the chewy results people expect.</li>\n  <li>Freeze-drying uses cold and vacuum. Ice becomes vapor. Pieces stay closer to their cut shape and eat crisp. The same Florida guide describes that sublimation step.</li>\n  <li>Neither result is fresh fruit. Both belong in a sealed container. Both can be soaked and cooked.</li>\n</ul>\n<p>If a recipe calls for dried cherries and you only have freeze-dried cherries, expect less chew, more crunch, and a stronger flavor in a smaller spoon.</p>\n\n<h2>Easy ways to use it</h2>\n<ul>\n  <li>Eat a small handful as it is, next to yogurt or a few nuts if nuts are right for the people at the table.</li>\n  <li>Crumble it over oatmeal or a warm grain bowl.</li>\n  <li>Stir it into a trail mix you assemble yourself, so you can see every ingredient.</li>\n  <li>Fold it into muffin batter near the end. Some pieces soften. Some stay as little pockets.</li>\n  <li>Cover a spoonful with hot water when you want a quick, jammy topping. Start with less water than you think.</li>\n</ul>\n<p>Whole nuts, and the crisp pieces themselves, are a poor match for very young children. Texture and size matter. The family guide covers that with a link to the CDC’s choking-hazard list: <a href=\"/healthy-snacks-for-busy-families/\">Healthy Snacks for Busy Families</a>.</p>\n<p>For the rest of the weekday, <a href=\"/everyday-snacking-more-natural/\">10 simple ways to make everyday snacking more natural</a> is the companion piece, including what the word “natural” does and does not mean on a label.</p>\n\n<h2>How to read the package</h2>\n<p>Turn the bag over. The ingredient list is the useful part.</p>\n<ul>\n  <li>One ingredient — the fruit — is the straightforward version.</li>\n  <li>Added sugar, juice concentrate, or flavors means the product is a recipe.</li>\n  <li>Serving size is listed by weight. Because the water is gone, a serving can look small and still count as a lot of fruit.</li>\n  <li>The word “natural” on the front is not a score for how close the food is to the orchard. The U.S. Food and Drug Administration has never set a formal definition that turns that word into a health claim.</li>\n</ul>\n\n<h2>A note from the publisher</h2>\n<p>Some companies sell freeze-dried fruit, including Nature’s Turn, which publishes this journal. This story explains the process in general. It is not a review, a ranking, or a suggestion that any brand belongs on your table.</p>\n<section class=\"sources\" aria-labelledby=\"sources-title\">\n    <h2 id=\"sources-title\">Sources</h2>\n    <ol><li><a href=\"https://extension.usu.edu/foodsafety/research/can-i-freeze-dry-that-a-practical-guide-to-safe-and-effective-freeze-drying\">Can I Freeze-Dry That? A Practical Guide to Safe and Effective Freeze-Drying</a>. Utah State University Extension. Describes freezing, primary drying by sublimation, and secondary drying.</li><li><a href=\"https://extension.arizona.edu/sites/default/files/2025-03/az2097a-2025.pdf\">Basics of Home Freeze Drying</a>. University of Arizona Cooperative Extension, publication AZ2097. Discusses flavor of freeze-dried food relative to other drying methods.</li><li><a href=\"https://ask.ifas.ufl.edu/publication/HS1478/pdf\">Dehydrated and Freeze-dried Peach Fruit</a>. University of Florida IFAS, HS1478. Contrasts heated-air dehydrating with freeze-drying by sublimation.</li><li><a href=\"https://fdc.nal.usda.gov/\">FoodData Central</a>. U.S. Department of Agriculture. Lookup for nutrient data on specific foods.</li><li><a href=\"https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/use-term-natural-food-labeling\">Use of the Term Natural on Food Labeling</a>. U.S. Food and Drug Administration. States that “natural” is not a formal health definition.</li></ol>\n    <p>Enjoy Naturally is published by Nature's Turn. This story is general information, not medical, nutrition-therapy, or product advice. Read the <a href=\"/editorial-disclosure/\">editorial disclosure</a> and the <a href=\"/medical-disclaimer/\">medical disclaimer</a>.</p>\n  </section>\n<!-- /wp:html -->"
+    },
+    {
+      "slug": "everyday-snacking-more-natural",
+      "title": "10 Simple Ways to Make Everyday Snacking More Natural",
+      "kicker": "Everyday",
+      "category": "food-recipes",
+      "date": "2026-11-05 11:00:00",
+      "minutes": 4,
+      "image": "snacks-board.jpg",
+      "alt": "A wooden board with apple slices, almonds, yogurt, cucumber sticks, and freeze-dried berries on cream linen.",
+      "excerpt": "More natural, at home, means snacks you recognize and portions that fit the day. Ten habits, including what the word natural does not mean on a label.",
+      "description": "Ten practical ways to snack on foods you recognize, read a label without the fuss, and keep dried fruit in proportion.",
+      "content": "<!-- wp:html -->\n<p class=\"dek\">“More natural” can mean a dozen things on a package and almost nothing you can check. At home, it can mean something simpler: snacks you recognize, in amounts that fit the day. Here are ten ways to do that without a new personality or a pantry overhaul.</p>\n\n<h2>1. Start with food you can picture</h2>\n<p>An apple, a carrot, a spoon of yogurt, a handful of oats. If you can imagine where it grew, or at least name the food without reading a paragraph, it is an easy place to begin. You do not need a perfect kitchen. You need a few foods you already know how to eat.</p>\n\n<h2>2. Put the easy option where your hand goes</h2>\n<p>The snack you see is the snack you eat. Wash a bowl of grapes and set them at eye level, and halve them for little children. Keep sliced cucumbers in a box at the front of the fridge. Slide the crackers you are trying to eat less often onto a higher shelf. This is not discipline. It is geography.</p>\n\n<h2>3. Pair something fresh with something that stays</h2>\n<p>Fruit on its own is lovely, and it leaves some people hunting again an hour later. A piece of cheese, a spoon of yogurt, a few pumpkin seeds, or hummus next to the apple gives the snack more to do. That is a kitchen observation, not a medical plan. Build the plate you actually finish feeling settled with.</p>\n\n<h2>4. Treat dried fruit as concentrated fruit</h2>\n<p>Freeze-dried berries and chewy dried apricots both have had their water removed. The fruit’s own sugar is still there, packed into less space. A small handful can equal several pieces of fresh fruit. That is not a reason to avoid it. It is a reason to pour a portion instead of eating from the bag. <a href=\"/what-is-freeze-dried-fruit/\">What changes when fruit is freeze-dried</a> walks through texture, weight, and labels.</p>\n\n<h2>5. Read the ingredient list before the front of the bag</h2>\n<p>The front is an advertisement. The ingredient list is the recipe, written in order by weight. Short is not always better, and long is not always a problem, but you should be able to recognize most of the words. If sugar, syrup, or a sweetener shows up in the first few ingredients of something sold as fruit, you are looking at candy that learned a new vocabulary.</p>\n\n<h2>6. Learn the limit of the word “natural”</h2>\n<p>The FDA has not written a formal definition of “natural” for food labels. Its long-standing policy is narrower than the word sounds in a grocery aisle. The agency has considered “natural” to mean that nothing artificial or synthetic, including color additives, has been added to a food that would not normally be expected there. That policy was not meant to judge farming methods, and it was not meant to describe a health benefit. You can read the agency’s own page on <a href=\"https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/use-term-natural-food-labeling\">the use of the term “natural”</a> and the <a href=\"https://www.federalregister.gov/documents/2015/11/12/2015-28779/use-of-the-term-natural-in-the-labeling-of-human-food-products-request-for-information-and-comments\">2015 Federal Register notice</a> that repeats the policy.</p>\n<p>So “natural” on a box does not mean organic, unprocessed, or better for you. It is a labeling word with a specific, limited history. The ingredient list still does more work than the adjective.</p>\n\n<h2>7. Assemble one mix you actually like</h2>\n<p>A trail mix is only useful if someone in the house wants it. Stir together plain cereal or oats, a few freeze-dried berries, and seeds or nuts that fit your household. Skip the nuts entirely if anyone has an allergy, and skip whole nuts for young children. Keep the mix in a jar with a small scoop so the serving is a decision, not a disappearance.</p>\n\n<h2>8. Ask whether you are thirsty</h2>\n<p>An afternoon slump often arrives at the same time as a dry mouth. Drink a glass of water, then decide if you still want food. This will not fix a short night or a skipped lunch. It does keep you from treating thirst as a snack emergency.</p>\n\n<h2>9. Give the snack five quiet minutes</h2>\n<p>Eat it at a table when you can, not over the sink while answering something else. Five minutes is enough to notice whether you wanted food or a pause. The CDC’s notes on choking also start with a simple scene: sit down, skip the rush, and watch young children while they eat. That guidance lives in our <a href=\"/healthy-snacks-for-busy-families/\">family snack guide</a>.</p>\n\n<h2>10. Repeat a short list of winners</h2>\n<p>You do not need thirty ideas. You need four that survive a Tuesday. Write them on a card inside the cabinet: yogurt and berries, apple and cheese, cucumbers and hummus, a measured scoop of the house mix. When the week gets loud, the card is the plan. The <a href=\"https://www.dietaryguidelines.gov/\">Dietary Guidelines for Americans</a> describe an eating pattern built from vegetables, fruits, grains, dairy, and protein foods. A snack can be a small piece of that pattern. It does not have to be a project.</p>\n\n<h2>What this list will not do</h2>\n<p>It will not stand in for a clinician’s advice, and it will not turn a packaged snack on a hard day into a moral event. It is a way to keep ordinary food within reach, and to read a label without handing the decision to a marketing word.</p>\n<section class=\"sources\" aria-labelledby=\"sources-title\">\n    <h2 id=\"sources-title\">Sources</h2>\n    <ol><li><a href=\"https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/use-term-natural-food-labeling\">Use of the Term Natural on Food Labeling</a>. U.S. Food and Drug Administration.</li><li><a href=\"https://www.federalregister.gov/documents/2015/11/12/2015-28779/use-of-the-term-natural-in-the-labeling-of-human-food-products-request-for-information-and-comments\">Use of the Term “Natural” in the Labeling of Human Food Products</a>. Federal Register, Nov. 12, 2015. Restates the FDA’s long-standing policy.</li><li><a href=\"https://www.dietaryguidelines.gov/\">Dietary Guidelines for Americans</a>. Describes an eating pattern built from vegetables, fruits, grains, dairy, and protein foods.</li></ol>\n    <p>Enjoy Naturally is published by Nature's Turn. This story is general information, not medical, nutrition-therapy, or product advice. Read the <a href=\"/editorial-disclosure/\">editorial disclosure</a> and the <a href=\"/medical-disclaimer/\">medical disclaimer</a>.</p>\n  </section>\n<!-- /wp:html -->"
+    },
+    {
+      "slug": "healthy-snacks-for-busy-families",
+      "title": "Healthy Snacks for Busy Families: A Practical Guide",
+      "kicker": "Practical guide",
+      "category": "family-kids",
+      "date": "2026-11-05 10:00:00",
+      "minutes": 4,
+      "image": "family-snacks.jpg",
+      "alt": "A parent and a school-age child packing fruit, cheese, and cut vegetables into a lunchbox on a kitchen counter.",
+      "excerpt": "Healthy, here, means everyday foods in amounts that fit the people eating them. A simple pattern, five fast plates, and the safety notes that matter.",
+      "description": "A practical snack pattern for busy families: everyday foods, age-appropriate texture, and how to keep perishable lunches cold.",
+      "content": "<!-- wp:html -->\n<p class=\"dek\">“Healthy,” in this house, means a snack built from everyday foods, sized for the people eating it, and realistic on a Tuesday. It does not mean a perfect lunchbox or a claim about preventing illness. Here is a practical pattern, five fast plates, and the safety notes that matter more than the theme.</p>\n\n<h2>A pattern you can remember</h2>\n<p>When the question is “what can they eat before practice,” reach for three kinds of food and stop when you have two.</p>\n<ul>\n  <li><strong>Produce.</strong> Fruit or vegetables, fresh, freeze-dried, or cooked soft enough for the eater.</li>\n  <li><strong>Something that lingers.</strong> Yogurt, cheese, beans, egg, hummus, or seeds. Nuts and nut butters only when they are safe for your household and the child’s age.</li>\n  <li><strong>A familiar starch, if you need it.</strong> Bread, crackers you can read the ingredients of, leftover rice, or oats.</li>\n</ul>\n<p>The <a href=\"https://www.dietaryguidelines.gov/\">Dietary Guidelines for Americans</a> describe meals and snacks as part of a pattern built from those everyday groups. A snack is one small plate in that pattern. It is not a treatment, and it is not a test you pass.</p>\n<p>Freeze-dried fruit can play the produce role when the fruit bowl is empty. Remember that the water is gone, so a little goes further. <a href=\"/what-is-freeze-dried-fruit/\">How freeze-dried fruit changes</a> is the longer explanation.</p>\n\n<h2>Texture, age, and choking</h2>\n<p>The same snack is not right for every age. The CDC’s <a href=\"https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/choking-hazards.html\">choking-hazard page</a> is the list to keep. Whole grapes, whole cherry tomatoes, nuts, seeds, popcorn, raw carrot coins, globs of nut butter, and dried fruit that stays chewy are among the foods it flags for babies and young children.</p>\n<p>A few habits help at any age:</p>\n<ul>\n  <li>Sit down to eat. Walking, riding in the car, or lying down with food in the mouth is a harder scene.</li>\n  <li>Cut grapes, cherry tomatoes, and similar round foods lengthwise, and again if the child is young.</li>\n  <li>Spread nut or seed butter thin. A spoonful can form a plug.</li>\n  <li>Skip whole nuts for little children, even when an older sibling eats them freely.</li>\n  <li>Stay nearby while young children eat.</li>\n</ul>\n<p>This is general safety information from public guidance, not personal medical advice. If you are unsure what texture fits your child, ask their clinician. If someone is choking and cannot breathe or speak, call emergency services.</p>\n\n<h2>Five plates that take about ten minutes</h2>\n<h3>Yogurt cup</h3>\n<p>Plain yogurt, sliced soft fruit or a sprinkle of freeze-dried berries, and a spoon. If you sweeten it, you will taste the choice. Kids can stir.</p>\n<h3>Cheese and fruit plate</h3>\n<p>Cheese cut to the right size, apple slices for older kids, and a soft fruit for younger ones. Add a few crackers if the gap until dinner is long.</p>\n<h3>Hummus and something crunchy</h3>\n<p>Hummus with cucumber spears, bell pepper strips, or pita. For little children, cook hard vegetables until they mash, instead of serving raw sticks.</p>\n<h3>The house mix, scooped</h3>\n<p>Cereal or oats, freeze-dried fruit, and seeds that fit your allergy list. Keep a small scoop in the jar so “some” has a size. See <a href=\"/everyday-snacking-more-natural/\">everyday snacking</a> for how to stock that jar.</p>\n<h3>Leftover breakfast, renamed</h3>\n<p>Cold oatmeal thinned with milk, or a piece of last night’s baked potato with a spoon of yogurt. A snack does not have to be a product. It can be the meal you already cooked.</p>\n\n<h2>Lunchboxes and the clock</h2>\n<p>Perishable food should not sit out and hope for the best. USDA Food Safety and Inspection Service calls 40°F to 140°F the “Danger Zone,” the range where bacteria multiply quickly. The practical rule from that page: do not leave perishable food out more than 2 hours, or 1 hour if the air is above 90°F. Cold foods belong at or below 40°F.</p>\n<p>For a lunchbox, that usually means an ice pack against the yogurt, cheese, or cooked leftovers, and a note to toss anything that sat in a warm car. Shelf-stable foods — a whole fruit, freeze-dried fruit in a sealed bag, bread — are the easier half of the box. The cold half needs the pack.</p>\n<p>Details are on the FSIS page, <a href=\"https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/danger-zone-40f-140f\">Danger Zone (40°F–140°F)</a>. When you get home, leftovers go into the fridge in a shallow container, not into a deep pot that stays warm in the middle.</p>\n\n<h2>Let them help, with a job that fits</h2>\n<p>Washing fruit, stirring yogurt, and choosing between two options you already approve are real jobs. Knife work waits until you are standing there and the child is ready. The point is not a performance. The point is that food they helped put on the plate is easier to meet with curiosity.</p>\n<p>Preferences change by the day. Offer the food, keep the mood ordinary, and let one polite “no” stand. A snack is a small event. It does not need a speech.</p>\n\n<h2>The hard afternoon</h2>\n<p>Some days the snack is a packaged bar in the car. That day is not a verdict on your family. Come back to the short list tomorrow: produce, something that lingers, and a cold pack if the food needs it. The pattern matters more than any single Tuesday.</p>\n<p>Nothing in this guide treats, prevents, or manages a condition. Foods are foods. Questions about growth, allergy, or a child’s eating belong with their clinician, not with a journal.</p>\n<section class=\"sources\" aria-labelledby=\"sources-title\">\n    <h2 id=\"sources-title\">Sources</h2>\n    <ol><li><a href=\"https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/choking-hazards.html\">Choking Hazards</a>. Centers for Disease Control and Prevention, Infant and Toddler Nutrition.</li><li><a href=\"https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/danger-zone-40f-140f\">Danger Zone (40°F–140°F)</a>. USDA Food Safety and Inspection Service. Time and temperature guidance for perishable food.</li><li><a href=\"https://www.dietaryguidelines.gov/\">Dietary Guidelines for Americans</a>. Eating-pattern context for everyday foods.</li></ol>\n    <p>Enjoy Naturally is published by Nature's Turn. This story is general information, not medical, nutrition-therapy, or product advice. Read the <a href=\"/editorial-disclosure/\">editorial disclosure</a> and the <a href=\"/medical-disclaimer/\">medical disclaimer</a>.</p>\n  </section>\n<!-- /wp:html -->"
+    },
+    {
+      "slug": "creamy-wild-rice-mushroom-soup",
+      "title": "Creamy Wild Rice & Mushroom Soup",
+      "kicker": "Recipe of the week",
+      "category": "food-recipes",
+      "date": "2026-11-05 09:00:00",
+      "minutes": 2,
+      "image": "soup-week.jpg",
+      "alt": "A bowl of creamy wild rice and mushroom soup with thyme, next to a piece of crusty bread on a linen napkin.",
+      "excerpt": "Hearty, comforting, and built for chilly November nights. Mushrooms, wild rice, and a splash of milk.",
+      "description": "A November pot of mushrooms, onion, and wild rice finished with lemon. An original Enjoy Naturally recipe for a chilly night.",
+      "tag": "recipe",
+      "content": "<!-- wp:html -->\n<p class=\"dek\">A pot of mushrooms, onion, and wild rice, finished with a little milk and lemon. It is a November supper that waits on the stove while you do something else. This is a home recipe from the Enjoy Naturally kitchen, not a lab-tested nutrition panel.</p>\n\n<p class=\"recipe-meta\"><span>Serves 4</span><span>About 1 hour</span><span>Mostly hands-off simmering</span></p>\n\n<h2>Ingredients</h2>\n<ul>\n  <li>1 cup wild rice blend, or ¾ cup wild rice plus ¼ cup brown rice, rinsed</li>\n  <li>2 tablespoons olive oil</li>\n  <li>1 onion, diced</li>\n  <li>2 garlic cloves, minced</li>\n  <li>12 ounces mixed mushrooms, sliced</li>\n  <li>1 teaspoon fresh thyme leaves, or ½ teaspoon dried thyme</li>\n  <li>6 cups unsalted vegetable broth, plus more if the pot looks dry</li>\n  <li>½ cup milk, or unsweetened oat milk</li>\n  <li>1 tablespoon lemon juice</li>\n  <li>Salt and black pepper</li>\n  <li>Chopped parsley, for the bowls</li>\n  <li>Crusty bread, for serving</li>\n</ul>\n\n<h2>Method</h2>\n<ol>\n  <li>Warm the oil in a heavy pot over medium heat. Cook the onion with a pinch of salt until it turns soft and clear, about 6 to 8 minutes.</li>\n  <li>Add the garlic, mushrooms, and thyme. Cook until the mushrooms release their liquid and the edges brown, about 8 minutes. Do not rush this part. The browning is the flavor.</li>\n  <li>Stir in the rice so the grains pick up the oil, then pour in the broth. Bring the pot to a simmer.</li>\n  <li>Cover and cook until the rice is tender. Wild rice is ready when many of the dark grains have split open. A blend often needs 40 to 50 minutes. Check the time on your package, and add a splash of water if the surface looks dry before the rice is done.</li>\n  <li>Stir in the milk and the lemon juice. Taste. Add salt and pepper a little at a time. If the broth was already salted, you may need very little.</li>\n  <li>Ladle into warm bowls, finish with parsley, and serve with bread.</li>\n</ol>\n\n<h2>Notes from the pot</h2>\n<ul>\n  <li>For a thicker soup, scoop out about a cup, blend it until smooth, and stir it back in.</li>\n  <li>Skip the milk and finish with a spoon of olive oil if you want the soup fully free of dairy.</li>\n  <li>Cool leftovers in a shallow container and refrigerate them within 2 hours. USDA Food Safety and Inspection Service explains why on its <a href=\"https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/danger-zone-40f-140f\">Danger Zone page</a>: perishable food should not sit between 40°F and 140°F. Reheat until the soup is steaming.</li>\n</ul>\n<p>If you are stocking the pantry around meals like this, the journal’s notes on <a href=\"/what-is-freeze-dried-fruit/\">freeze-dried fruit</a> and <a href=\"/everyday-snacking-more-natural/\">everyday snacking</a> sit in the same kitchen.</p>\n<section class=\"sources\" aria-labelledby=\"sources-title\">\n    <h2 id=\"sources-title\">Sources</h2>\n    <ol><li><a href=\"https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/danger-zone-40f-140f\">Danger Zone (40°F–140°F)</a>. USDA Food Safety and Inspection Service. Used for the leftover-cooling note.</li></ol>\n    <p>Enjoy Naturally is published by Nature's Turn. This story is general information, not medical, nutrition-therapy, or product advice. Read the <a href=\"/editorial-disclosure/\">editorial disclosure</a> and the <a href=\"/medical-disclaimer/\">medical disclaimer</a>.</p>\n  </section>\n<!-- /wp:html -->"
+    }
+  ],
+  "images": [
+    {
+      "file": "family-snacks.jpg",
+      "alt": "A parent and a school-age child packing fruit, cheese, and cut vegetables into a lunchbox on a kitchen counter."
+    },
+    {
+      "file": "snacks-board.jpg",
+      "alt": "A wooden board with apple slices, almonds, yogurt, cucumber sticks, and freeze-dried berries on cream linen."
+    },
+    {
+      "file": "apple-crisp.jpg",
+      "alt": "A rustic apple oat crisp in a ceramic baking dish, golden on top, with a wooden spoon beside it."
+    },
+    {
+      "file": "hero-november.jpg",
+      "alt": "A woman and two children arranging carrots, greens, and squash in a wide bowl at a wooden kitchen table."
+    },
+    {
+      "file": "garden-autumn.jpg",
+      "alt": "A gardener in a wool hat and green coat kneeling beside wooden raised beds and a crate of kale in late autumn."
+    },
+    {
+      "file": "home-cozy.jpg",
+      "alt": "A cream linen sofa with a chunky knit throw, a round wood table, a candle, and olive branches."
+    },
+    {
+      "file": "kids-crafts.jpg",
+      "alt": "Two children at a wooden table tying twine around pinecones, with autumn leaves scattered between them."
+    },
+    {
+      "file": "leaf-mulch.jpg",
+      "alt": "Dark garden soil under a layer of autumn leaves, with a kale stem still growing through the mulch."
+    },
+    {
+      "file": "soup-week.jpg",
+      "alt": "A bowl of creamy wild rice and mushroom soup with thyme, next to a piece of crusty bread on a linen napkin."
+    },
+    {
+      "file": "pinecone-feeder.jpg",
+      "alt": "A pinecone coated in seeds and tied with twine, resting on a wooden table with a few loose seeds and a leaf."
+    },
+    {
+      "file": "freeze-dried.jpg",
+      "alt": "A ceramic bowl of crisp freeze-dried strawberry and apple pieces on linen, with two fresh strawberries beside it."
+    },
+    {
+      "file": "kitchen-bowl.jpg",
+      "alt": "A ceramic bowl of farro with roasted squash, zucchini, chickpeas, and herbs."
+    }
+  ],
+  "footer_categories": [
+    "food-recipes",
+    "garden",
+    "herbs",
+    "natural-home",
+    "family-kids",
+    "mindful-living",
+    "seasonal",
+    "outdoors",
+    "sustainable-living"
+  ],
+  "journal_slugs": [
+    "what-is-freeze-dried-fruit",
+    "everyday-snacking-more-natural",
+    "healthy-snacks-for-busy-families",
+    "creamy-wild-rice-mushroom-soup"
+  ]
+}

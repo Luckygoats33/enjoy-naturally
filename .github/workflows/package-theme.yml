@@ -1,0 +1,27 @@
+name: Package theme
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "wp-content/themes/enjoy-naturally/**"
+      - "scripts/package-theme.sh"
+      - ".github/workflows/package-theme.yml"
+  workflow_dispatch:
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Zip the theme
+        run: ./scripts/package-theme.sh
+
+      - name: Upload enjoy-naturally-theme.zip
+        uses: actions/upload-artifact@v4
+        with:
+          name: enjoy-naturally-theme
+          path: dist/enjoy-naturally-theme.zip
+          if-no-files-found: error

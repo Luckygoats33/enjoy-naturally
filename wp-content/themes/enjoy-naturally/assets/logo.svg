@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 320" fill="none" role="img" aria-labelledby="logoTitle">
+  <title id="logoTitle">enjoy naturally. Live well, eat real, enjoy more.</title>
+  <g stroke="#C56B4A" stroke-width="2.6" stroke-linecap="round" transform="translate(318 8)">
+    <path d="M8 58c12-22 40-28 62-10"/>
+    <path d="M34 18v13"/>
+    <path d="M16 26l8 9"/>
+    <path d="M54 22l-7 11"/>
+    <path d="M2 42l12 7"/>
+    <path d="M74 40l-12 6"/>
+    <path d="M22 10l6 11"/>
+    <path d="M50 8l-4 12"/>
+  </g>
+  <g stroke="#1C4033" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" transform="translate(330 36)">
+    <path d="M28 96c-3-26-20-44-26-62 15 9 24 28 26 62z"/>
+    <path d="M30 96c6-24 24-42 42-56-18 11-32 30-38 56z"/>
+    <path d="M29 94V46"/>
+  </g>
+  <text x="380" y="214" text-anchor="middle" fill="#1C4033" font-family="Fraunces, Palatino, Georgia, serif" font-size="78" font-weight="500">enjoy naturally</text>
+  <text x="380" y="268" text-anchor="middle" fill="#1C4033" font-family="Source Sans 3, Gill Sans, Trebuchet MS, sans-serif" font-size="16" letter-spacing="3.2">LIVE WELL  ·  EAT REAL  ·  ENJOY MORE</text>
+</svg>
