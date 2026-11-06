@@ -111,6 +111,31 @@ function en_supplemental_copy($slug) {
 	return wp_kses_post(en_expand_root_urls($html));
 }
 
+/**
+ * Tags allowed in a theme hub file: post HTML plus the magazine spread.
+ *
+ * @return array<string, array<string, bool>>
+ */
+function en_hub_allowed_html() {
+	$allowed = wp_kses_allowed_html('post');
+	$allowed['div']     = array(
+		'class' => true,
+		'id'    => true,
+	);
+	$allowed['section'] = array(
+		'class'      => true,
+		'aria-label' => true,
+	);
+	$allowed['figure']  = array(
+		'class' => true,
+	);
+	if (isset($allowed['img']) && is_array($allowed['img'])) {
+		$allowed['img']['loading']  = true;
+		$allowed['img']['decoding'] = true;
+	}
+	return $allowed;
+}
+
 function en_category_hub($slug) {
 	$slug = sanitize_title($slug);
 	if (! preg_match('/^[a-z0-9-]+$/', $slug)) {

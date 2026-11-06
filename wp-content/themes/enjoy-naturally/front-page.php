@@ -25,16 +25,19 @@ $hero = en_hero_image();
 		<h2 id="this-week-title"><?php esc_html_e('This week', 'enjoy-naturally'); ?></h2>
 		<div class="this-week-grid">
 			<a class="week-card" href="<?php echo esc_url(home_url('/creamy-wild-rice-mushroom-soup/')); ?>">
+				<?php echo en_img('soup-week.jpg', __('Creamy wild rice and mushroom soup beside bread.', 'enjoy-naturally'), 1600, 1200); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 				<p class="eyebrow"><?php esc_html_e('Recipe', 'enjoy-naturally'); ?></p>
 				<strong><?php esc_html_e('Wild rice and mushroom soup', 'enjoy-naturally'); ?></strong>
 				<span><?php esc_html_e('Cook tonight', 'enjoy-naturally'); ?> <?php echo en_icon('arrow'); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></span>
 			</a>
 			<a class="week-card" href="<?php echo esc_url(home_url('/mindful-living/#cooler-room-flow')); ?>">
+				<?php echo en_img('home-cozy.jpg', __('A quiet corner of the living room for a short practice.', 'enjoy-naturally'), 1600, 1200); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 				<p class="eyebrow"><?php esc_html_e('Yoga', 'enjoy-naturally'); ?></p>
 				<strong><?php esc_html_e('Cooler Room Flow, 8 minutes', 'enjoy-naturally'); ?></strong>
 				<span><?php esc_html_e('Practice now', 'enjoy-naturally'); ?> <?php echo en_icon('arrow'); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></span>
 			</a>
 			<a class="week-card" href="<?php echo esc_url(home_url('/natural-home/#evening-reset')); ?>">
+				<?php echo en_img('home-cozy.jpg', __('A sofa with a knit throw and a lamp.', 'enjoy-naturally'), 1600, 1200); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 				<p class="eyebrow"><?php esc_html_e('Home', 'enjoy-naturally'); ?></p>
 				<strong><?php esc_html_e('Evening reset, five steps', 'enjoy-naturally'); ?></strong>
 				<span><?php esc_html_e('Do this week', 'enjoy-naturally'); ?> <?php echo en_icon('arrow'); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></span>

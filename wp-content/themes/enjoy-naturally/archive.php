@@ -35,7 +35,7 @@ $category = is_category() ? get_queried_object() : null;
 		<?php if ($category instanceof WP_Term) : ?>
 			<?php $hub = en_category_hub($category->slug); ?>
 			<?php if ('' !== $hub) : ?>
-				<div class="prose category-hub"><?php echo wp_kses_post($hub); ?></div>
+				<div class="prose category-hub"><?php echo wp_kses($hub, en_hub_allowed_html()); ?></div>
 			<?php elseif ('' !== trim((string) $category->description)) : ?>
 				<p class="lede"><?php echo wp_kses_post(en_expand_root_urls($category->description)); ?></p>
 			<?php endif; ?>

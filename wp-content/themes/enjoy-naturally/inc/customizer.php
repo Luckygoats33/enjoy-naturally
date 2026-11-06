@@ -16,7 +16,7 @@ add_action('customize_register', 'en_customize_register');
  */
 function en_mod_defaults() {
 	return array(
-		'en_hero_title'     => __('This week at home', 'enjoy-naturally'),
+		'en_hero_title'     => __('What I\'m loving this November', 'enjoy-naturally'),
 		'en_hero_lede'      => __('Soup for tonight, an 8-minute yoga flow, and one room reset.', 'enjoy-naturally'),
 		'en_hero_cta_label' => __('See this week', 'enjoy-naturally'),
 		'en_hero_cta_url'   => '',
