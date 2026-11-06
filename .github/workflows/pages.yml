@@ -1,0 +1,56 @@
+name: Deploy GitHub Pages
+
+on:
+  push:
+    branches: [gh-pages]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout preview
+        uses: actions/checkout@v4
+
+      - name: Enable Pages from the gh-pages branch
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set +e
+          gh api --method POST "repos/${GITHUB_REPOSITORY}/pages" \
+            -f build_type=legacy \
+            -f source[branch]=gh-pages \
+            -f source[path]=/ 
+          post_status=$?
+          if [ "$post_status" -ne 0 ]; then
+            gh api --method PUT "repos/${GITHUB_REPOSITORY}/pages" \
+              -f build_type=legacy \
+              -f source[branch]=gh-pages \
+              -f source[path]=/
+          fi
+
+      - name: Configure Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
