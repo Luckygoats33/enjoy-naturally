@@ -1,6 +1,6 @@
 # Enjoy Naturally
 
-WordPress theme for [Enjoy Naturally](https://enjoynaturally.com), a seasonal journal and a Nature's Turn publication. The brand on the site is Enjoy Naturally. Nature's Turn is named in the header note, the footer, and the about page, the same way the static preview did it.
+WordPress theme for [Enjoy Naturally](https://enjoynaturally.com), a personal blog about recipes, yoga, lifestyle, and everyday life. Static preview: https://luckygoats33.github.io/enjoy-naturally/
 
 This repository is the theme only. It does not include WordPress core.
 
@@ -56,7 +56,7 @@ The importer creates these pages:
 
 | Page | Slug |
 | --- | --- |
-| A journal from Nature's Turn | `about` |
+| This is my blog | `about` |
 | The seasonal letter | `newsletter` |
 | Contact the editors | `contact` |
 | Privacy | `privacy` |

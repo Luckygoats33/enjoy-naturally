@@ -18,17 +18,9 @@ defined('ABSPATH') || exit;
 <a class="skip-link" href="#main"><?php esc_html_e('Skip to content', 'enjoy-naturally'); ?></a>
 <header class="site-header">
 	<div class="header-inner">
-		<?php if (has_custom_logo()) : ?>
-			<div class="brand-lockup">
-				<?php the_custom_logo(); ?>
-				<span class="brand-note"><?php esc_html_e("A Nature's Turn publication", 'enjoy-naturally'); ?></span>
-			</div>
-		<?php else : ?>
-			<a class="brand" href="<?php echo esc_url(home_url('/')); ?>">
-				<span class="brand-name">enjoy naturally</span>
-				<span class="brand-note"><?php esc_html_e("A Nature's Turn publication", 'enjoy-naturally'); ?></span>
-			</a>
-		<?php endif; ?>
+		<a class="brand" href="<?php echo esc_url(home_url('/')); ?>">
+			<?php echo en_logo_lockup(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- theme logo SVG. ?>
+		</a>
 		<div class="header-tools">
 			<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
 				<span class="nav-toggle-bars" aria-hidden="true"></span>

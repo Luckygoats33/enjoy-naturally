@@ -222,7 +222,7 @@ function en_meta_description() {
 		}
 	}
 	if (is_front_page()) {
-		return __('Seasonal food, garden notes, and family ideas from Enjoy Naturally, a Nature\'s Turn publication.', 'enjoy-naturally');
+		return __('Recipes, yoga, and everyday ideas from Enjoy Naturally, a personal blog.', 'enjoy-naturally');
 	}
 	return get_bloginfo('description');
 }

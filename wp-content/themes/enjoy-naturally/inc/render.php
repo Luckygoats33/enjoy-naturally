@@ -146,8 +146,8 @@ function en_render_recipe_panel() {
  */
 function en_render_newsletter_panel() {
 	echo '<aside class="panel newsletter-panel" aria-labelledby="newsletter-title">';
-	echo '<h2 id="newsletter-title">' . en_icon('mail') . ' ' . esc_html__('Join the Enjoy Naturally community', 'enjoy-naturally') . '</h2>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-	echo '<p>' . esc_html__('Seasonal inspiration, simple ideas, and nature-centered living — straight to your inbox.', 'enjoy-naturally') . '</p>';
+	echo '<h2 id="newsletter-title">' . en_icon('mail') . ' ' . esc_html__('If you want the next note', 'enjoy-naturally') . '</h2>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+	echo '<p>' . esc_html__('A recipe, a yoga idea, or something small from my week. Only when I actually have one.', 'enjoy-naturally') . '</p>';
 	echo en_newsletter_form_html(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- form markup escaped in the builder.
 	echo '</aside>';
 }

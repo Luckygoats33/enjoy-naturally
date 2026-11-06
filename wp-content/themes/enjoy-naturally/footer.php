@@ -12,7 +12,7 @@ defined('ABSPATH') || exit;
 		<div>
 			<p class="footer-name">enjoy naturally</p>
 			<p class="tagline"><?php esc_html_e('Live well', 'enjoy-naturally'); ?> <span class="dot" aria-hidden="true">·</span> <?php esc_html_e('Eat real', 'enjoy-naturally'); ?> <span class="dot" aria-hidden="true">·</span> <?php esc_html_e('Enjoy more', 'enjoy-naturally'); ?></p>
-			<p class="disclosure"><?php esc_html_e("Enjoy Naturally is published by Nature's Turn. Stories are general information for home life, not medical advice.", 'enjoy-naturally'); ?></p>
+			<p class="disclosure"><?php esc_html_e('Notes from my life at home. Not medical advice.', 'enjoy-naturally'); ?></p>
 		</div>
 		<nav class="footer-nav" aria-label="<?php esc_attr_e('Journal', 'enjoy-naturally'); ?>">
 			<h2><?php esc_html_e('Journal', 'enjoy-naturally'); ?></h2>

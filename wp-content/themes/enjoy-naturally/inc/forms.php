@@ -108,7 +108,7 @@ function en_form_html($kind) {
 	$notice  = en_form_notice($kind);
 	$success = is_array($notice) && ! empty($notice['ok']);
 	$error   = is_array($notice) && empty($notice['ok']) ? $notice['message'] : '';
-	$heading = $success && ! empty($notice['heading']) ? $notice['heading'] : __('Saved for the editors.', 'enjoy-naturally');
+	$heading = $success && ! empty($notice['heading']) ? $notice['heading'] : __('Saved.', 'enjoy-naturally');
 	$message = $success && ! empty($notice['message']) ? $notice['message'] : '';
 	$action  = 'newsletter' === $kind ? 'en_newsletter' : 'en_contact';
 	$anchor  = 'newsletter' === $kind ? 'en-newsletter' : 'en-contact';
@@ -151,7 +151,7 @@ function en_newsletter_fields() {
 	</div>
 	<label class="checkbox">
 		<input name="consent" type="checkbox" value="1" required>
-		<span><?php esc_html_e('Send the seasonal note. Your address is saved for the editors until the mailing list is connected. It is not sold.', 'enjoy-naturally'); ?></span>
+		<span><?php esc_html_e('Send the note when there is one. Your address stays with me until a mailing list is connected. It is not sold.', 'enjoy-naturally'); ?></span>
 	</label>
 	<p id="newsletter-hint" class="form-note"><?php echo wp_kses_post(sprintf(__('No confirmation email yet. <a href="%s">How the list will work</a>.', 'enjoy-naturally'), esc_url(en_page_url('newsletter')))); ?></p>
 	<?php
@@ -185,7 +185,7 @@ function en_contact_fields() {
 	</label>
 	<label class="checkbox">
 		<input name="consent" type="checkbox" value="1" required>
-		<span><?php esc_html_e('I understand this message goes to the Enjoy Naturally editors and is stored on the website.', 'enjoy-naturally'); ?></span>
+		<span><?php esc_html_e('I understand this message comes to the person who writes Enjoy Naturally and is stored on the website.', 'enjoy-naturally'); ?></span>
 	</label>
 	<button class="button" type="submit"><?php esc_html_e('Send message', 'enjoy-naturally'); ?></button>
 	<p class="form-note"><?php echo wp_kses_post(sprintf(__('Please do not include medical details or account passwords. Health questions belong with a clinician. See the <a href="%s">medical disclaimer</a>.', 'enjoy-naturally'), esc_url(en_page_url('medical-disclaimer')))); ?></p>
@@ -284,7 +284,7 @@ function en_process_form($kind) {
 	$email   = isset($_POST['email']) ? sanitize_email(wp_unslash($_POST['email'])) : '';
 	$consent = isset($_POST['consent']) && '1' === sanitize_text_field(wp_unslash($_POST['consent']));
 	if (! is_email($email)) {
-		return en_form_error($kind, __('Use an email address the editors can reply to.', 'enjoy-naturally'));
+		return en_form_error($kind, __('Use an email address I can reply to.', 'enjoy-naturally'));
 	}
 	if (! $consent) {
 		return en_form_error($kind, __('The consent box is required.', 'enjoy-naturally'));
@@ -311,7 +311,7 @@ function en_process_form($kind) {
 			'ok'      => true,
 			'form'    => $kind,
 			'heading' => __('That address is already saved.', 'enjoy-naturally'),
-			'message' => __('The editors already have it for the seasonal letter. Nothing was sent to your inbox today.', 'enjoy-naturally'),
+			'message' => __('I already have that address for the letter. Nothing was sent to your inbox today.', 'enjoy-naturally'),
 		);
 	}
 
@@ -363,15 +363,15 @@ function en_form_success($kind, $honeypot) {
 		return array(
 			'ok'      => true,
 			'form'    => $kind,
-			'heading' => __('Saved for the editors.', 'enjoy-naturally'),
-			'message' => __('They can read it in the journal inbox.', 'enjoy-naturally'),
+			'heading' => __('Saved.', 'enjoy-naturally'),
+			'message' => __('I can read it in the site inbox.', 'enjoy-naturally'),
 		);
 	}
 	return array(
 		'ok'      => true,
 		'form'    => $kind,
-		'heading' => __('Saved for the editors.', 'enjoy-naturally'),
-		'message' => __('We will use this address only for the seasonal letter. Nothing was sent to your inbox today.', 'enjoy-naturally'),
+		'heading' => __('Saved.', 'enjoy-naturally'),
+		'message' => __('I will use this address only for the letter. Nothing was sent to your inbox today.', 'enjoy-naturally'),
 	);
 }
 

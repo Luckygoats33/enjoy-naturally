@@ -55,7 +55,7 @@ $category = is_category() ? get_queried_object() : null;
 				);
 				?>
 			<?php elseif ($category instanceof WP_Term) : ?>
-				<p class="empty"><?php esc_html_e('The first full stories in this category are still with the editors. The notes below are what we plan to publish.', 'enjoy-naturally'); ?></p>
+				<p class="empty"><?php esc_html_e('I\'m still writing the first full stories here. The notes below are what I plan to post.', 'enjoy-naturally'); ?></p>
 			<?php else : ?>
 				<p class="empty"><?php esc_html_e('Nothing is filed here yet.', 'enjoy-naturally'); ?></p>
 			<?php endif; ?>

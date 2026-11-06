@@ -164,7 +164,7 @@ function en_print_json_ld() {
 			'description' => en_meta_description(),
 			'publisher'   => array(
 				'@type' => 'Organization',
-				'name'  => "Nature's Turn",
+				'name'  => 'Enjoy Naturally',
 			),
 		);
 	} elseif (is_singular('post')) {
@@ -184,7 +184,7 @@ function en_print_json_ld() {
 			),
 			'publisher'        => array(
 				'@type' => 'Organization',
-				'name'  => "Nature's Turn",
+				'name'  => 'Enjoy Naturally',
 			),
 		);
 	} else {

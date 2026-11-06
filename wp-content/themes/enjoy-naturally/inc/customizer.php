@@ -16,8 +16,8 @@ add_action('customize_register', 'en_customize_register');
  */
 function en_mod_defaults() {
 	return array(
-		'en_hero_title'     => __('Living naturally this November', 'enjoy-naturally'),
-		'en_hero_lede'      => __('Cozy rituals, seasonal food, and simple ways to slow down and connect with nature.', 'enjoy-naturally'),
+		'en_hero_title'     => __('What I\'m loving this November', 'enjoy-naturally'),
+		'en_hero_lede'      => __('Recipes I cook on weeknights, yoga that fits in a small room, and the everyday ideas I don\'t want to lose.', 'enjoy-naturally'),
 		'en_hero_cta_label' => __('Explore fall ideas', 'enjoy-naturally'),
 		'en_hero_cta_url'   => '',
 	);

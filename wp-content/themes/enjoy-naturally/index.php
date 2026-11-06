@@ -34,7 +34,7 @@ get_header();
 			);
 			?>
 		<?php else : ?>
-			<p class="empty"><?php esc_html_e('The first full stories are still with the editors.', 'enjoy-naturally'); ?></p>
+			<p class="empty"><?php esc_html_e('I\'m still writing the first stories.', 'enjoy-naturally'); ?></p>
 		<?php endif; ?>
 	</div>
 </main>
